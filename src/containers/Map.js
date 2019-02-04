@@ -37,7 +37,7 @@ class MapContainer extends Component {
                                     onDragend={(e) => this.onDragEnd(e, placemark.id)}
                                     properties={{
                                         hintContent: `#${i+1}`,
-                                        balloonContent: placemark.name + ' ' + placemark.coords,
+                                        balloonContent: placemark.name,
                                     }}
                                     modules={
                                         ['geoObject.addon.balloon', 'geoObject.addon.hint']

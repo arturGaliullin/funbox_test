@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Error extends Component {
     render() {
@@ -10,3 +11,8 @@ export default class Error extends Component {
         )
     }
 }
+
+Error.propTypes = {
+    placemarkError: PropTypes.any,
+    searchError: PropTypes.any
+};

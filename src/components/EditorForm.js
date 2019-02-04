@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class EditorForm extends Component {
     constructor(props) {
@@ -70,3 +71,10 @@ export default class EditorForm extends Component {
         );
     }
 }
+
+EditorForm.propTypes = {
+    clearData: PropTypes.func,
+    searchData: PropTypes.func,
+    addPlacemark: PropTypes.func,
+    results: PropTypes.array
+};

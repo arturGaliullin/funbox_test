@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class EditorItems extends Component {
     onDelete = (e, id) => {
@@ -51,3 +52,9 @@ export default class EditorItems extends Component {
         )
     }
 }
+
+EditorItems.propTypes = {
+    removePlacemark: PropTypes.func,
+    updatePlacemarks: PropTypes.func,
+    placemarks: PropTypes.array
+};
